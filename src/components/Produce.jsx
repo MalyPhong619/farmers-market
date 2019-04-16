@@ -25,6 +25,10 @@ function Produce(props) {
            text-align: center;
            margin: 0;
          }
+         ul {
+           margin-bottom: 0;
+           padding-bottom: 0;
+         }
          li {
            display: block;
          }

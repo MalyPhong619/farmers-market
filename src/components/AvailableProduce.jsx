@@ -291,7 +291,7 @@ function AvailableProduce(){
            border: 3px solid lightgreen;
            height: 74px;
            align-items: center;
-           margin-bottom: -28px;
+           margin-bottom: -60px;
          }
          ul {
            padding: 8px;
