@@ -6,23 +6,34 @@ function Post(props){
     <div>
       <style jsx>{`
          div {
-           background-color: green;
+           background-color: lightgreen;
            font-family: arial;
+           background-color: skyblue;
+           color: darkblue;
+         }
+         ul {
+           padding: 8px;
+           border: 3px solid darkblue;
+         }
+         li {
+           display: block;
          }
        `}</style>
-      <p>POST JSX: In this template, the Post file is nested within the Highlights component. For example:</p>
-      <h3>{props.title}</h3>
-      <h4>{props.author}</h4>
-      <p>{props.details}</p>
-      <hr/>
+      <ul>
+        <li><h3>{props.day}s</h3></li>
+        <li><h4>{props.location}</h4></li>
+        <li><p>{props.hours}</p></li>
+        <li><p>Booth: {props.booth}</p></li>
+      </ul>
     </div>
   );
 }
 
 Post.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string,
-  details: PropTypes.string.isRequired
+  day: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  hours: PropTypes.string.isRequired,
+  booth: PropTypes.string.isRequired
 };
 
 export default Post;
