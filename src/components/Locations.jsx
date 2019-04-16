@@ -6,9 +6,11 @@ function Locations(){
   return (
     <div>
       <style jsx>{`
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr 3fr;
+        div {
+          display: grid;
+          grid-gap: 1em;
+          grid-template-columns: 200px auto;
+        }
        `}</style>
       <LocationsNew/>
       <AvailableProduce/>

@@ -8,6 +8,7 @@ function Produce(props) {
          div {
            background-color: lightgreen;
            font-family: arial;
+           color: forestgreen;
          }
          ul {
            display: grid;
